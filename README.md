@@ -28,7 +28,7 @@ through (entities it should have hidden or culled).
 6. A red X means the build failed (for example a changed API name or import). Open the failed step,
    copy the log and send it over.
 
-Local build instead: JDK 25 + Gradle 9.5.1, then run `gradle build` in this folder.
+Local build instead: JDK 25 + Gradle 9.4.1, then run `gradle build` in this folder.
 The jar ends up in `build/libs/ESPTest-1.1.0+mc26.1.2.jar` (ignore the `-sources` jar).
 
 ## Opening the menu
