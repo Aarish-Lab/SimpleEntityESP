@@ -18,10 +18,10 @@ jobs:
           distribution: temurin
           java-version: '25'
 
-      - name: Set up Gradle 9.4.1
+      - name: Set up Gradle 9.5.1
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '9.4.1'
+          gradle-version: '9.5.1'
 
       - name: Build the mod
         run: gradle build --stacktrace
