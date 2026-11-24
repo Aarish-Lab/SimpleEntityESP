@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "esptest",
+	"version": "${version}",
+	"name": "ESP Test",
+	"description": "Client-side entity ESP (glow outlines through walls) for testing anti-ESP / entity-hiding plugins on your own server.",
+	"authors": [
+		"esptest authors"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.esptest.EspTestClient"
+		],
+		"modmenu": [
+			"dev.esptest.EspModMenuApi"
+		]
+	},
+	"mixins": [
+		{
+			"config": "esptest.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": ">=18.0.2"
+	}
+}
